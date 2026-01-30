@@ -49,7 +49,7 @@ object ExamenParcial extends IOApp.Simple {
       .query[UsuarioRedSocial]
       .to[List]
 
-  // Función para limpiar la tabla antes de insertar (opcional)
+  // Función para limpiar la tabla antes de insertar 
   def limpiarTabla(): ConnectionIO[Int] =
     sql"TRUNCATE TABLE usuarios_redes".update.run
 
